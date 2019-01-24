@@ -1,0 +1,12 @@
+*** 李开复, 人工智能, Book, 2017-05
+    - [[https://github.com/daodaogua/relevant-in-AI/tree/master/AI-topics/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-%E6%9D%8E%E5%BC%80%E5%A4%8D][个人摘要]]
+      - 目录
+      - 重要内容思维导图
+
+*** UCLA朱松纯 浅谈人工智能：现状、任务、构架与统一 | 正本清源, 长文, 《视觉求索》微信公众号, 2017-11-02
+    - [[https://github.com/daodaogua/relevant-in-AI/tree/master/AI-topics/%5BUCLA%E6%9C%B1%E6%9D%BE%E7%BA%AF%5D%E6%B5%85%E8%B0%88%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%EF%BC%9A%E7%8E%B0%E7%8A%B6%E3%80%81%E4%BB%BB%E5%8A%A1%E3%80%81%E6%9E%84%E6%9E%B6%E4%B8%8E%E7%BB%9F%E4%B8%80][个人摘要]]
+      - 目录
+      - 重要内容思维导图
+      - 摘要
+
+*** 零散信息摘抄
