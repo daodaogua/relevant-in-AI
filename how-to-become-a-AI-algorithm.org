@@ -38,7 +38,11 @@
 
 ** 如何成为一个data scientist
 
-   - [[./Drew_Conway.png][数据科学维恩图]]
+#+CAPTION: 数据科学韦恩图
+#+ATTR_HTML: :width 50%
+#+ATTR_ORG: :width 100
+#+ATTR_latex: :width 200
+   - [[./Drew_Conway.png]]
 
      - 三大基础
 
