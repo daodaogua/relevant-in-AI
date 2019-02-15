@@ -38,7 +38,7 @@
 
 ** 如何成为一个data scientist
 
-   - [[./Drew_Conway.jpeg]数据科学维恩图]]
+   - [[./Drew_Conway.jpeg][数据科学维恩图]]
 
      - 三大基础
 
