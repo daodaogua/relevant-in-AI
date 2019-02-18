@@ -71,7 +71,7 @@
 
        - ...
 
-     - 快速上手-- *了解自己,不要挑战自制力*
+     - 快速上手 -- *了解自己,不要挑战自制力*
 
        - 完成特别简单且耗时短的实践课程 -- 完成不费力
          - 比如[[https://morvanzhou.github.io/tutorials/machine-learning/sklearn/][sklearn轻松使用]]--morvan
