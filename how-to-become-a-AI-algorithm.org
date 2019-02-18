@@ -55,8 +55,11 @@
      - 实用技能推荐
 
        - 搜索能力
+         - [[https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E4%B8%80%E4%B8%AAai%E7%AE%97%E6%B3%95%E5%B7%A5%E7%A8%8B%E5%B8%88&oq=morvan&rsv_pq=b5db8a7d0005d8eb&rsv_t=fadaY0JH%2FoKYbM1PO9asyZzYxeOk1qwQmGcvXY0Pc2hdseEo8hizJtJv74g&rqlang=cn&rsv_enter=1&inputT=15068&rsv_sug3=23&rsv_sug1=13&rsv_sug7=101&rsv_n=2&rsv_sug2=0&rsv_sug4=15361][如何成为一个ai算法工程师]]
 
        - github使用
+         - [[https://github.com/search?q=%E6%8A%A2%E7%A5%A8][抢票]]
+         - [[https://github.com/search?q=alphagozero][AlphaGoZero]]
 
        - python
 
@@ -68,24 +71,28 @@
 
        - ...
 
-     - 快速上手
+     - 快速上手--*了解自己,不要挑战自制力*
 
-       - 完成特别简单且耗时短的实践课程
+       - 完成特别简单且耗时短的实践课程--完成不费力
          - 比如[[https://morvanzhou.github.io/tutorials/machine-learning/sklearn/][sklearn轻松使用]]--morvan
 
-       1. 进入一个能够给予指导项目组
+       - 进入一个能够给予指导项目组--工作压力
 
-       2. 报名一门相关课程
+       - 报名一门相关课程--花钱
+         - Andrew Ng
+           - [[https://www.coursera.org/learn/machine-learning][机器学习]]
+           - [[https://www.deeplearning.ai/][深度学习]]
 
-       3. 指导上手实践的教程
+       - 指导上手实践的教程--实践能力提升正反馈
+         - [[https://morvanzhou.github.io/learning-steps/][morvan机器学习顺序]]
 
-       4. 找一个背景领域开始解决问题
+       - 找一个背景领域开始解决问题--能输出(输出阻力小于输入)
 
-       5. !关于理论知识
+       - !关于理论知识
 
-          - 不要从理论教材入手学习
+         - 不要从理论教材入手学习
 
-          - 一定阶段后补充理论知识:发现无法或低效完成任务时
+         - 一定阶段后补充理论知识:发现无法或低效完成任务时
 
 
 ** 工作日的时间规划
@@ -131,28 +138,13 @@
      - ...
 
 
-** 要的到底是什么?怎么达成?
+** 要的到底是什么?--*发现真实的需求* ;  如何实现?--*让事情简单一点,局部最优解*
 
-   做事情的过程是一个螺旋上升的轨迹 -- 唐博
+   - # 开始解决问题--发现需求
 
-   贪心+迭代法则 -- 费扬
+   - while 未完成 -- 错的需求永远解决不了问题
 
-   方法论引导问题解决: 调用模块
-
-   先抄会用再改(学)后创新[抄用改创]
-
-   知识积累: 总结+迭代+存储+易获取+搜索[总代存获搜]
-
-   分享
-
-
-   - # 开始解决问题
-
-   - while 未完成
-
-     - 要什么
-
-     - 需求排序--打分制
+     - 需求排序--打分制/二维法
 
      - 解决--贪心
 
@@ -162,9 +154,22 @@
 
        - if 不会
 
-         - 问--how-to-ask-a-question
+         - 问--[[https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way][how-to-ask-a-question-the-smart-way]]
 
          - 做
+
+
+   贪心+迭代法则 -- 费扬
+
+   方法论引导问题解决: 调用模块
+
+   先抄会用再改(学)后创新[抄用改创]
+
+   知识积累: 总结+迭代+存储+易获取+搜索[总代存获搜]
+
+   做事情的过程是一个螺旋上升的轨迹 -- 唐博
+
+   分享
 
 
 ** 其他分享
