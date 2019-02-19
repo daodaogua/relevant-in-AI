@@ -61,11 +61,10 @@
          - [[https://github.com/search?q=%E6%8A%A2%E7%A5%A8][抢票]]
          - [[https://github.com/search?q=alphagozero][AlphaGoZero]]
 
-       - python
+       - coding/debug
+         - [[http://kaiminghe.com/][何恺明]]
 
-       - debug
-
-       - 代码包
+       - python&代码包
          - numpy
          - matplotlib
          - sklearn
