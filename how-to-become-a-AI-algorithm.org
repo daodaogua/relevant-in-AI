@@ -63,6 +63,8 @@
 
        - python
 
+       - debug
+
        - 代码包
          - numpy
          - matplotlib
