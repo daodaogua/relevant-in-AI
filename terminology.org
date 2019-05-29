@@ -3,3 +3,9 @@ disentanglement
 latent space
 
 latent variable
+
+Dkl: Kullback-Leibler Divergence
+
+mutual information
+
+ Variational Information Maximization

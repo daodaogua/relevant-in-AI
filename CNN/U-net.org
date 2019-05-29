@@ -1,0 +1,38 @@
+#+title: U-net论文总结
+#+author: Qiang
+
+- [[https://arxiv.org/pdf/1505.04597.pdf][文章arxiv]]
+- [[https://github.com/jakeret/tf_unet][U-net-tensorflow github库]]
+
+** 研究现状概述
+- 研究目标
+  - Segmentation
+  - utilize fewer labeled data to train a reliable model
+- 实现的情况
+- 遇到的问题
+
+
+** 主要贡献
+- 提出U-net
+- use a weighted loss
+- use data augmentation
+
+** U-net
+- [[./U-net_structure.png]]
+- left side is contract path
+- right side is expansive path
+
+** weighted loss
+- 区分regional edge
+  - 增大edge的权重
+
+** data augmentation
+- 生医领域常用:tissue and realistic deformation
+
+** 实现效果
+
+** 存在的问题
+
+** 思考
+- U-net已经成为标准的segmentation方案,尤其在生医图像领域
+- 对于大小相差很大的region,此模型有不错的效果,可以进一步扩展相关阅读
