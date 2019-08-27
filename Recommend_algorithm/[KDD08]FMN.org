@@ -1,0 +1,24 @@
+** 创新点
+- 融合neighborhood model和latent factor model,经改进后,形成一个整体模型 *SVD++*
+
+** 整体内容
+- baseline estimates
+- neighborhood model
+- latent factor models
+  - 引入SVD
+- implicit feedback(新的项)
+- 进阶neighborhood model
+  - item i,j的相关性变成模型参数,可训练
+  - implicit feedback加入,可训练
+  - item bias, user bias变成模型参数,可训练
+  - 防止过拟合
+- 进阶latent factor models
+  - user分量展开,训练参数为x,y,同item相关
+    - 减少参数
+    - new user不用再训练
+    - 好解释(类似neighborhood model)
+    - 易于加入implicit feedback
+- an integrated model
+  - 进阶NM和进阶LFM的合并
+  - [补充信息[09]]可使用可靠性权重(根据implicit feedback确定user是否对item感兴趣)对评分加权再优化
+  - static vs dynamic

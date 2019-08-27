@@ -1,0 +1,60 @@
+** 推荐算法分类
+1. 协同过滤推荐
+   - 定义
+     - 给予过往历史,不需要创建显示画像
+     - 不需要领域知识,避免额外的数据收集
+   - 分类
+     - 基于项目
+     - 基于用户
+     - 基于模型
+
+** 算法包
+- suprise
+
+** 算法介绍
+- collaborative filtering(CF)
+- baseline estimate
+- neighborhood model
+- latent factor model
+  - matrix factorization_based algorithm
+
+** 论文
+*** SVD
+- based on BE, LFM
+- enhenced by NM
+- [KDD08]Factorization_Meets_the_Neighborhood-_a_Multifaceted_Collaborative_Filtering_Model
+- [09]Matrix Factorization Techniques for Recommender Systems
+*** KNN
+- based on NM, cluster
+- enhenced by BE, Z-score normalization
+*** NMF(coming)
+- based on LFM
+*** Slope One(coming)
+- based on f(x) = x + b, item i,j differential
+- enhenced by weight of number, bi-polar(reduce variance)
+*** CoClustering
+- based on NM, clustering, Co-clustering
+- enhenced by BE
+- 算法的理解(用于算法扩展)
+  - 聚类算法的核心:
+    - 根据所有item和classes,算出每个class的core
+    - 然后对所有item算对于每个class的合适度(根据core)
+    - 根据合适度重新将item分配到class,形成新的class
+- [05]A ScalableCollaborative FilteringFrameworkbasedonCo-clustering
+*** embeding + DL
+
+** 数据预处理
+- 策略:尽量多
+- explicit feedback
+- implicit feedback
+
+**** 资料
+     -[[https://blog.csdn.net/u011095110/article/details/84403564][典型推荐算法总结]]
+
+
+
+**** 术语
+- content filtering
+- collaborative filtering
+- memory-based scheme(CF)
+  - similarity
