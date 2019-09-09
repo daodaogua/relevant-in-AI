@@ -1,0 +1,50 @@
+#+title: DKN summary
+#+author: Qiang
+
+*** background description
+- the method for building news recommendation system.
+- CF is not suitable(DMF)
+
+*** challenge description
+- time-sensitive
+- topic-sensitive in news reading(*knowledge*)
+- news language is usually highly condensed and comprised of a large amount of knowledge entities and common sense(*knowledge*)
+
+*** preliminaries
+- knowledge graph embedding
+  - TransE,...,TransD
+- CNN for sentence representation learning
+  - Kim CNN: word embedding, one dimension CNN, max Pooling to a vector
+
+*** problem formulation
+- input: all news clicked by a user, and current candidate news
+- output: the probility of the user clicking the current candidate news
+
+*** constructure
+- DKN framework
+  - knowledge distillation from a knowledge graph
+    - entity linking
+    - sub-graph
+    - entity embeddings
+    - context embeddings
+  - KCNN(knowledge-aware CNN)
+    - embedding input
+      - word embeddings
+      - transformed entity embeddings
+      - transformed context embeddings
+    - Kim CNN
+  - attention-based user interest extraction
+    - the weight of news k of user i and candidate news j (Attention)
+    - the embedding of user i for candidate news j
+    - the probility(DNN)
+
+*** related works
+- news recommendation
+- knowledge graph
+- deep recommender systems
+
+
+*** terminologies
+- entity embedding
+- baselines
+- F1, AUC

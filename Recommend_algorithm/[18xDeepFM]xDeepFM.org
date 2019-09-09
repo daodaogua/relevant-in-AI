@@ -1,0 +1,27 @@
+#+title: xDeepFM
+
+
+*** background
+- input: multi-factors
+- output: recommendation/classification,...
+
+*** preliminaries
+- embedding layer
+
+*** constructure
+- xDeepFM
+  - embedding layer
+  - CIN(compressed interaction network)
+    - explicit interaction (cross network)
+    - structure: similar to RNN
+    - computing method: similar to CNN
+    - result: similar to polynomial
+  - plain DNN
+    - implicit interaction (bit-wise)
+  - output unit
+
+
+*** terminologies
+- cross features / multi-way features
+  - through cross product
+  - vector-wise level
