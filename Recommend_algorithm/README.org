@@ -9,7 +9,28 @@
      - 基于模型
 
 ** 算法包
-- suprise
+- surprise
+  - 资料
+    - [[https://github.com/NicolasHug/Surprise][github]]
+    - [[https://surprise.readthedocs.io/][docs]]
+  - 算法表
+    - SVD
+    - SVD++: SVDpp
+    - NMF
+    - SlopeOne
+    - k-NN: KNNBasic
+    - Centered k-NN: KNNWithZScore/KNNWithMeans
+    - k-NN Baseline: KNNBaseline
+    - Co-Clustering
+    - Baseline
+    - Random
+  - 使用流程
+    - 导入数据
+    - 选用评价标准
+      - surprise.accuracy
+    - 指定算法集
+    - 挑选算法
+    - 交叉验证
 - pySpark
 
 ** 算法介绍(图数据结构表示更合适)
