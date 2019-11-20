@@ -1,0 +1,18 @@
+*** 本文类型
+- 综述
+
+*** 本文内容
+- 图数据分析的重要性
+- *图的频域*
+  - laplacian（...）
+  - projection
+  - *eigenvalue与smoothness的关系*
+- 图数据的基本操作
+- local，multiscale
+- open issue， extension
+
+*** 频域分析的好处
+- 利用laplacian，包含拓扑信息
+- 频域卷积，定义卷积核和卷积操作难度大
+- 利用频域分析已经有的各类信号分析结论
+- 频域和时域卷积有一定对应关系
