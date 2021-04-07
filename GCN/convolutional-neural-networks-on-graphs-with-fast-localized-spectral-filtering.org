@@ -1,7 +1,0 @@
-*** 本文内容
-- CNN运算定义
-- coarsening定义+快速计算
-- pooling定义+快速计算
-
-*** 资源
-- [[https://github.com/mdeff/cnn_graph][github代码]]

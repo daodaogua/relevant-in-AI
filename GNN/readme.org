@@ -1,0 +1,60 @@
+*** 文献列表
+**** Overview
+- A Comprehensive Survey on Graph NeuralNetworks
+
+**** General Paper
+
+- The Emerging Field of Signal Processing on Graphs
+  - GSP
+- Wavelets on Graphs via Spectral Graph Theory
+  - chebyshev polynomial approximation
+- convolutional-neural-networks-on-graphs-with-fast-localized-spectral-filtering
+  - GCNN
+
+--------------------
+- PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation
+  - PointNet
+    - T-net*（类似矩阵变换） 处理无序数据
+    - shared mlp 没能提取local feature
+- PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space
+  - PointNet++
+- Dynamic Graph CNN for Learning on Point Clouds
+  - DGCNN
+
+-----------------------------------------------
+- GNN: The graph neural network model
+
+- GGNN&GGS-NN: GATED GRAPH SEQUENCE NEURAL NETWORKS
+  - GGNN: initialization, fixed steps
+  - GGS-NN: two GGNN
+
+
+
+*** 参考资料
+- https://www.cnblogs.com/SivilTaram/p/graph_neural_network_1.html
+  - 语义解析case没看懂
+- graph signal processing (GSP)
+
+*** 概念
+- GNN
+- GGNN
+- GCN
+- spatial convolution
+- spectral convolution
+- 不动点理论
+  - 巴拿赫不动点定理(Banach's Fixed Point Theorem)
+- 图结点的度量
+  - 度
+    - 度矩阵（Degree 。。。）
+  - 临
+    - 邻接矩阵（Adjacent 。。。）
+  - 拉普拉斯矩阵
+- point clouds
+
+*** FAQ
+- GNN&GGNN&GCN的差别
+  - 原始的GNN基于不动点理论，求得压缩映射，使隐藏特征收敛。
+  - GGNN不再要求收敛，迭代固定轮数，每一轮共享权重，局部输出的loss优化权重（每一个结点的权重可能不同）
+  - GCN多轮前馈网络的权重不共享，不定尺寸的卷积是难点（每一个结点的权重要求相同）
+    - 转成欧式空间
+    - 不定长度卷积核

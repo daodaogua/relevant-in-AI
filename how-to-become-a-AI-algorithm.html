@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>如何成为一个AI算法工程师 &#x2013; 漫谈</title>
+<!-- 2019-02-26 二 09:44 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Qiang" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">如何成为一个AI算法工程师 &#x2013; 漫谈</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. 引言</a></li>
+<li><a href="#sec-2">2. 如何成为一个data scientist</a></li>
+<li><a href="#sec-3">3. 工作日的时间规划 &#x2013; <b>机械化</b></a></li>
+<li><a href="#sec-4">4. 感觉好像不对?</a></li>
+<li><a href="#sec-5">5. 要的到底是什么? &#x2013; <b>发现真实的需求</b> ;  如何实现? &#x2013; <b>让事情简单一点,局部最优解</b></a></li>
+<li><a href="#sec-6">6. 其他分享</a></li>
+<li><a href="#sec-7">7. 资源推荐</a></li>
+</ul>
+</div>
+</div>
+<ul class="org-ul">
+<li>风险提示: 以下内容可能主观,片面,不严谨,没逻辑,单调没案例,也许会造成您的心理不适,特提前告知.
+</li>
+</ul>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 引言</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>为何会思考这个问题
+<ul class="org-ul">
+<li>被咨询如何从业
+</li>
+<li>工作当中的反思
+</li>
+</ul>
+</li>
+
+<li>AI算法
+<ul class="org-ul">
+<li>机器学习
+<ul class="org-ul">
+<li>深度学习
+</li>
+
+<li>强化学习
+</li>
+<li>监督学习
+</li>
+<li>&#x2026;
+</li>
+</ul>
+</li>
+
+<li>语音识别
+</li>
+
+<li>图像处理
+</li>
+
+<li>&#x2026;
+</li>
+</ul>
+</li>
+
+<li>疑问
+
+<ul class="org-ul">
+<li>学了算法会用吗?
+</li>
+
+<li>学的东西能解决你的问题吗?
+</li>
+</ul>
+</li>
+
+<li>推荐的起点 &#x2013; <b>动手强于理论</b>
+
+<ul class="org-ul">
+<li>如何成为一个data scientist:数据科学家是指能采用科学方法、运用数据挖掘工具对复杂多量的数字、符号、文字、网址、音频或视频等信息进行数字化重现与认识，并能寻找新的数据洞察的工程师或专家.
+<ul class="org-ul">
+<li>数据挖掘
+</li>
+<li>数据处理
+</li>
+<li>数据洞察
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> 如何成为一个data scientist</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li><img src="./Drew_Conway.png" alt="Drew_Conway.png" />
+
+<ul class="org-ul">
+<li>三大基础
+
+<ul class="org-ul">
+<li>计算机技能
+</li>
+
+<li>数学(统计&#x2026;)
+</li>
+
+<li>领域知识
+</li>
+</ul>
+</li>
+
+<li>实用技能推荐
+
+<ul class="org-ul">
+<li>搜索能力
+<ul class="org-ul">
+<li><a href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E4%B8%80%E4%B8%AAai%E7%AE%97%E6%B3%95%E5%B7%A5%E7%A8%8B%E5%B8%88&oq=morvan&rsv_pq=b5db8a7d0005d8eb&rsv_t=fadaY0JH/oKYbM1PO9asyZzYxeOk1qwQmGcvXY0Pc2hdseEo8hizJtJv74g&rqlang=cn&rsv_enter=1&inputT=15068&rsv_sug3=23&rsv_sug1=13&rsv_sug7=101&rsv_n=2&rsv_sug2=0&rsv_sug4=15361">如何成为一个ai算法工程师</a>
+</li>
+</ul>
+</li>
+
+<li>github使用
+<ul class="org-ul">
+<li><a href="https://github.com/search?q=%E6%8A%A2%E7%A5%A8">抢票</a>
+</li>
+<li><a href="https://github.com/search?q=alphagozero">AlphaGoZero</a>
+</li>
+</ul>
+</li>
+
+<li>coding/debug
+<ul class="org-ul">
+<li><a href="http://kaiminghe.com/">何恺明</a>
+</li>
+</ul>
+</li>
+
+<li>python&amp;代码包
+<ul class="org-ul">
+<li>numpy
+</li>
+<li>matplotlib
+</li>
+<li>sklearn
+</li>
+<li>pytorch&#x2026;
+</li>
+</ul>
+</li>
+
+<li>&#x2026;
+</li>
+</ul>
+</li>
+
+<li>快速上手 &#x2013; <b>了解自己,不要挑战自制力</b>
+
+<ul class="org-ul">
+<li>完成特别简单且耗时短的实践课程 &#x2013; 完成不费力
+<ul class="org-ul">
+<li>比如<a href="https://morvanzhou.github.io/tutorials/machine-learning/sklearn/">sklearn轻松使用</a>&#x2013;morvan
+</li>
+</ul>
+</li>
+
+<li>进入一个能够给予指导项目组 &#x2013; 工作压力
+</li>
+
+<li>报名一门相关课程 &#x2013; 花钱
+<ul class="org-ul">
+<li>Andrew Ng
+<ul class="org-ul">
+<li><a href="https://www.coursera.org/learn/machine-learning">机器学习</a>
+</li>
+<li><a href="https://www.deeplearning.ai/">深度学习</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li>指导上手实践的教程&#x2013;实践能力提升正反馈
+<ul class="org-ul">
+<li><a href="https://morvanzhou.github.io/learning-steps/">morvan机器学习顺序</a>
+</li>
+</ul>
+</li>
+
+<li>找一个背景领域开始解决问题 &#x2013; 能输出(输出阻力小于输入)
+</li>
+
+<li>!关于理论知识
+
+<ul class="org-ul">
+<li>不要从理论教材入手学习
+</li>
+
+<li>一定阶段后补充理论知识:发现无法或低效完成任务时
+</li>
+</ul>
+</li>
+
+<li>关于paper
+
+<ul class="org-ul">
+<li>新人不必须读论文
+</li>
+
+<li>课程或年度重要论文值得一读
+</li>
+
+<li>追求创新再开始跟随前沿论文
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> 工作日的时间规划 &#x2013; <b>机械化</b></h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>一上班查看backlog和email
+</li>
+
+<li>查看模型优化情况,简单分析结果
+</li>
+
+<li>更新backlog
+</li>
+
+<li>快速看最近论文进展或行业进展
+</li>
+
+<li>稍微细读一篇paper
+<ul class="org-ul">
+<li>[选做]使用代码库
+</li>
+</ul>
+</li>
+
+<li>开始backlog中的任务
+</li>
+
+<li>[选做]交流
+</li>
+
+<li>下班前1小时分析是否有新的知识或是知识更新
+
+<ul class="org-ul">
+<li>有: 下班前半小时更新
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> 感觉好像不对?</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>我问的是AI算法工程师,为什么要给我讲data scientist呢!
+<ul class="org-ul">
+<li>基础的能力仍然需要
+</li>
+<li>平时用场景少[如果不是相关方向]
+</li>
+<li>找新工作需要一定时间准备,需要针对岗位要求
+<ul class="org-ul">
+<li>XX公司机器学习实习招聘
+<ul class="org-ul">
+<li>有机器学习基础只是,对多分类算法,近年来主流的深度网络结构有充分的了解
+</li>
+<li>熟悉一种深度学习平台如tensorflow,pytorch
+</li>
+<li>加分项:经验,论文
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li>我想做的是特别高端,像搞出AlphaGo算法那样的职业,讲的差高深算法太多
+
+<ul class="org-ul">
+<li>数据科学家分类&#x2013;[偏向数据,偏向商务,偏向算法,&#x2026;]链接丢失
+</li>
+
+<li>生态环境: 偏学术,学术产业结合,偏产业
+</li>
+</ul>
+</li>
+
+<li>到底要达到的目的是什么?
+
+<ul class="org-ul">
+<li>找到一份这个方向的工作
+</li>
+
+<li>解决人工智能范畴内的问题
+</li>
+
+<li>使用机器学习技术解决一些问题
+</li>
+
+<li>&#x2026;
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> 要的到底是什么? &#x2013; <b>发现真实的需求</b> ;  如何实现? &#x2013; <b>让事情简单一点,局部最优解</b></h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li><b>OKR</b> &#x2013; 可参考
+</li>
+
+<li>需求探索
+
+<ul class="org-ul">
+<li>更深:足够具体可行:WHAT
+</li>
+
+<li>更进:能够说服自己:WHY
+</li>
+
+<li>更全面:反向拷问:IF NOT
+</li>
+
+<li>例子:想完成一次好的演讲分享
+<ul class="org-ul">
+<li>什么是好的演讲分享
+<ul class="org-ul">
+<li>能让人留下印象
+<ul class="org-ul">
+<li>强烈情绪情感:幽默,好玩,悲伤,&#x2026;
+<ul class="org-ul">
+<li>自黑
+</li>
+<li>震撼的视频
+</li>
+<li>不幸的经历
+</li>
+</ul>
+</li>
+<li>简单清晰逻辑:总分,时序,举例,&#x2026;
+</li>
+<li>切身参与:互动问答,提及相关人物
+</li>
+</ul>
+</li>
+<li>能给人参考
+<ul class="org-ul">
+<li>面临的问题:
+<ul class="org-ul">
+<li>想要学一些AI相关的东西
+</li>
+<li>开始入门
+</li>
+<li>少走弯路
+</li>
+</ul>
+</li>
+<li>能够实现的解决办法
+<ul class="org-ul">
+<li>尽量简单
+<ul class="org-ul">
+<li>花的时间短
+</li>
+<li>入门门槛低
+</li>
+<li>能够有点用
+<ul class="org-ul">
+<li>能吹牛
+</li>
+<li>能解决简单问题
+</li>
+<li>&#x2026;
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>能有积极的力量
+<ul class="org-ul">
+<li>一切会变好
+<ul class="org-ul">
+<li>真有方法
+</li>
+<li>鸡汤
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>&#x2026;
+</li>
+</ul>
+</li>
+
+<li>为什么需要一次好的演讲分享
+<ul class="org-ul">
+<li>好的分享
+<ul class="org-ul">
+<li>有收获想分享大家,也许对大家有帮助
+</li>
+<li>能得到欣赏
+</li>
+</ul>
+</li>
+<li>为什么演讲
+<ul class="org-ul">
+<li>话痨
+</li>
+<li>快速反馈,得到满足感
+</li>
+<li>简单
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li>例子:想要学习机器学习
+<ul class="org-ul">
+<li>不学机器学习会怎么样?
+<ul class="org-ul">
+<li>不会怎么样:over
+</li>
+<li>职业之路受阻
+<ul class="org-ul">
+<li>什么是受阻
+</li>
+<li>为什么会受阻
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li>需求排序
+
+<ul class="org-ul">
+<li>不同需求 &#x2013; 打分制/二维[重要|紧急]
+</li>
+
+<li>需求的完成度 &#x2013; 主干;部分分支,..
+<ul class="org-ul">
+<li>如:
+<ul class="org-ul">
+<li>1小时的分享内容
+<ul class="org-ul">
+<li>提纲
+</li>
+<li>内容
+</li>
+</ul>
+</li>
+<li>有参考价值
+<ul class="org-ul">
+<li>&#x2026;
+</li>
+</ul>
+</li>
+<li>&#x2026;
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li>贪心: 选择 <b>当下</b> 最优的
+<ul class="org-ul">
+<li>不用想得太长远
+</li>
+<li>分析错了也无妨
+</li>
+<li>例
+<ul class="org-ul">
+<li>看英文原版paper还是看中文笔记?
+</li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li>迭代
+</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li># 开始解决问题/发现需求
+</li>
+
+<li>while 未完成 &#x2013; 迭代
+
+<ul class="org-ul">
+<li>需求完成度排序
+</li>
+
+<li>解决 &#x2013; 贪心
+
+<ul class="org-ul">
+<li>if 会
+
+<ul class="org-ul">
+<li>做
+</li>
+</ul>
+</li>
+
+<li>if 不会
+
+<ul class="org-ul">
+<li>问 &#x2013; <a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way">how-to-ask-a-question-the-smart-way</a>
+</li>
+
+<li>做
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<p>
+贪心+迭代法则 &#x2013; 费扬
+</p>
+
+<p>
+方法论引导问题解决: 调用模块
+</p>
+
+<p>
+先抄会用再改(学)后创新[抄用改创]
+</p>
+
+<p>
+知识积累: 总结+迭代+存储+易获取+搜索[总代存获搜]
+</p>
+
+<p>
+做事情的过程是一个螺旋上升的轨迹 &#x2013; 唐博
+</p>
+
+<p>
+分享
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> 其他分享</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>聊一聊焦虑
+<ul class="org-ul">
+<li>我: 自我否定
+</li>
+</ul>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>与人沟通 &#x2013; 张老师
+
+<ul class="org-ul">
+<li>be nice
+</li>
+
+<li>just do it
+</li>
+
+<li>so what
+</li>
+</ul>
+</li>
+
+<li>焦虑
+
+<ul class="org-ul">
+<li>take it easy
+<ul class="org-ul">
+<li>过去无法改变
+</li>
+<li>将来还未到来
+</li>
+<li>当下一切仍好
+</li>
+</ul>
+</li>
+
+<li>just do it
+<ul class="org-ul">
+<li>时间最珍贵
+</li>
+<li>永远做不完
+</li>
+<li>知道怎么做
+</li>
+</ul>
+</li>
+
+<li>so what
+<ul class="org-ul">
+<li>不能承受的结果
+<ul class="org-ul">
+<li>落难王子
+</li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li>有没有人愿意聊一聊自己的感受
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> 资源推荐</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>网站
+<ul class="org-ul">
+<li>github
+<ul class="org-ul">
+<li>star多
+</li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li>网课
+<ul class="org-ul">
+<li>吴恩达Andrew Ng
+</li>
+</ul>
+</li>
+
+<li>书
+<ul class="org-ul">
+<li>集体智慧编程
+</li>
+<li>python机器学习及实践
+</li>
+</ul>
+</li>
+
+<li>链接
+<ul class="org-ul">
+<li><a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way">how-to-ask-a-question-the-smart-way</a> github
+</li>
+</ul>
+</li>
+
+<li>实践教程
+<ul class="org-ul">
+<li>morvan
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Qiang</p>
+<p class="date">Created: 2019-02-26 二 09:44</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"></p>
+</div>
+</body>
+</html>

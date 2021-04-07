@@ -2,4 +2,17 @@
 
 *** U-net
 
+*** RetinaNet
+- reference
+  - https://zhuanlan.zhihu.com/p/67768433
+- structure
+  - ResNet+FPN+2xFCN
+- key skill
+  - Focal loss
+    - (1-Pt)^gama
+      - Pt 是 正确判定的概率
+      - gama越大越能针对难判的样本
+    - alpha_t
+      - 正负类别不平衡
+
 *** 零散信息摘抄

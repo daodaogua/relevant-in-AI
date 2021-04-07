@@ -1,0 +1,71 @@
+** 文章目录
+*** I. Introduction
+- contribution
+  - new taxonomy
+  - comprehensive review
+  - abundant resources
+  - future directions
+*** II. Background & Definition
+**** A. Background
+- a brief history of graph neural networks (GNNs)
+- graph neural networks vs. network embedding
+- graph neural networks vs. graph kernel methods
+**** B. Definition
+- table
+  - commonly used notations
+- definition
+  - graph
+  - directed graph
+  - spatial-temporal graph
+*** III. Categorization and Frameworks
+**** A. Taxonomy of Graph Neural Networks (GNNs)
+- recurrent graph neural networks (RecGNNs)
+- convolutional graph neural networks (ConvGNNs)
+- graph autoencoders (GAEs)
+- spatial-temporal graph neural networks (STGNNs)
+**** B. Frameworks
+- graph analytic tasks
+  - node-level
+  - edge-level
+  - graph-level
+- training frameworks
+  - semi-supervised learning for node-level classification
+  - supervised learning for graph-level classification
+  - unsupervised learning for graph embedding
+*** IV. Recurrent Graph Neural Networks
+*** V. Convolutional Graph Neural Networks
+**** A. Spectral-based ConvGNNs
+- background
+**** B. Spatial-based ConvCNNs
+- improvement over training efficient
+- comparison between spectral and spatial models
+**** C. Graph Pooling Modules
+**** D. Discussion of Theoretical Aspects
+- shape of receptive field
+- VC dimension
+- graph isomorphism
+- equivariance and invariance
+- universal approximation
+*** VI. Graph Autoencoders
+**** A. Network Embedding
+**** B. Graph Generation
+*** VII. Spatial-Temporal Graph Neural Networks
+*** VIII. Applications
+**** A. Data Sets
+**** B. Benchmarks & Open-Source Implementations
+**** C. Pratical Applications
+- computer vision
+- natural language processing
+- traffic
+- recommender systems
+- chemistry
+- others
+*** IX. Future Directions
+- model depth
+- scalability trade-off
+- heterogenity
+- dynamicity
+*** X. Conclusion
+*** APPENDIX
+**** A. Data Set
+**** B. Open-source Implementations
